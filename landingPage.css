@@ -71,3 +71,8 @@ img {
 h2 {
     text-shadow: 2px 2px 4px #000000;
 }
+
+.navItems{
+    display:flex;
+    justify-content:space-between;
+}

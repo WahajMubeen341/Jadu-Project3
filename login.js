@@ -1,5 +1,7 @@
 const verify_emailInput = document.getElementById("verify_email");
 const verify_passwordInput = document.getElementById("verify_password");
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 const checkUserBtn = document.getElementById("check_member");
 const userStorage = localStorage.getItem("users");
@@ -21,6 +23,6 @@ checkUserBtn.addEventListener("click", function () {
       }
 
     });
-    isUser ? alert("user") : alert("not a user");
+    isUser ? swal("Hello") : alert("not a user");
   });
  
