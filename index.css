@@ -17,3 +17,17 @@ margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
 }
+.cor{
+    background-color:#FDFEFE;
+    
+}
+.time{
+    display:flex;
+    justify-content:center;
+    margin-top:200px;
+    margin-bottom: 50px;
+    font-size: 120px;
+    color:#2471A3
+
+}
+

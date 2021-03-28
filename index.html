@@ -8,143 +8,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./timer.js"></script>
     <title>Hello, world!</title>
 </head>
 <style>
-    html, body{
+    html,
+    body {
 
         font-family: 'Spartan', sans-serif;
     }
 </style>
 
 <body>
+    <div class="container-fluid">
+        <div class="top" style="display: flex; justify-content: flex-start; color:white ;">
+            <h1>Featured Blogs</h1>
+        </div>
 
-    <div class="top" style="display: flex; justify-content: flex-start; color:white ;">
-        <h1>Featured Blogs</h1>
-    </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 50px; margin-bottom:50px">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 50px; margin-bottom:50px">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="item-container">
-                    <div>
-                        <img src="https://miro.medium.com/max/700/1*6iYRJgS-waRiMBKo69Owtw.jpeg" alt="image-3">
-                    </div>
-                    <div class="content" style="max-width: 500px; margin-top:60px ;">
-                        <h2>Swat Valley — Beginning of a new era</h2>
-                        <blockquote>Swat is an exceptional scenic valley located in northwest of Pakistan. The valley
-                            was once a stronghold for Talibans where state had almost lost its control there. TV was
-                            banned, public hangings were common, girls were not allowed to go to school, even the
-                            schools were destroyed. Then finally after a long lasting fight between the Armed forces of
-                            Pakistan and militants in Swat, the state has finally succeeded to take the full control of
-                            the valley.
-                        </blockquote>
-                        <div class="author">
-                            <h4>~Muhammad Wahaj Mubeen</h4>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active container">
+                    <div class="item-container row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="https://miro.medium.com/max/700/1*6iYRJgS-waRiMBKo69Owtw.jpeg" alt="image-3">
                         </div>
-                        <div class="author"><a href="https://iwahajmubeen341.medium.com/">Read at
-                                Medium</a></div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="item">
-                <div class="item-container">
-                    <div>
-                        <img src="https://miro.medium.com/max/700/1*z21kiJekRLbvLgfeVUnkQQ.jpeg" alt="image-1">
-                    </div>
-                    <div class="content" style="max-width: 500px; margin-top:60px ;">
-                        <h2>Burnout!</h2>
-                        <blockquote>Burnout is a state of emotional, physical, and mental exhaustion caused by excessive
-                            and
-                            prolonged stress. It occurs when you feel overwhelmed, emotionally drained, and unable to
-                            meet
-                            constant demands. As the stress continues, you begin to lose the interest and motivation
-                            that
-                            led you to take on a certain role in the first place.</blockquote>
-                        <div class="author">
-                            <h4>~Saadiah</h4>
+                        <div class=" col-md-6 col-sm-12 cor" style="max-width: 500px; margin-top:60px ;">
+                            <h2>Swat Valley — Beginning of a new era</h2>
+                            <blockquote>Swat is an exceptional scenic valley located in northwest of Pakistan. The
+                                valley
+                                was once a stronghold for Talibans where state had almost lost its control there. TV was
+                                banned, public hangings were common, girls were not allowed to go to school, even the
+                                schools were destroyed. Then finally after a long lasting fight between the Armed forces
+                                of
+                                Pakistan and militants in Swat, the state has finally succeeded to take the full control
+                                of
+                                the valley.
+                            </blockquote>
+                            <div class="author">
+                                <h4>~Muhammad Wahaj Mubeen</h4>
+                            </div>
+                            <div class="author"><a href="https://iwahajmubeen341.medium.com/">Read at
+                                    Medium</a></div>
                         </div>
-                        <div class="author"><a
-                                href="https://saadiyahh.medium.com/burnout-how-it-feels-like-384fef2d4d6c">Read at
-                                Medium</a></div>
                     </div>
                 </div>
 
-            </div>
 
-            <div class="item">
-                <div class="item-container">
-                    <div>
-                        <img src="https://miro.medium.com/max/700/1*7Y4nKCZIDLNHWHcLhWfDRA.png" alt="image-2">
-                    </div>
-                    <div class="content" style="max-width: 500px; margin-top:60px ;">
-                        <h2>Taking it to the Next Level</h2>
-                        <blockquote>Hey peeps, as promised in the previous blog, this week has been very fruitful in
-                            terms of Learning advanced JavaScript. This week we really did took it to the next level.
-                        </blockquote>
-                        <div class="author">
-                            <h4>~Saad Farooq</h4>
+
+
+                <div class="item">
+                    <div class="item-container">
+                        <div class="sm">
+                            <img src="https://miro.medium.com/max/700/1*z21kiJekRLbvLgfeVUnkQQ.jpeg" alt="image-1">
                         </div>
-                        <div class="author"><a href="https://engr-saadfarooq.medium.com/">Read at
-                                Medium</a></div>
+                        <div class="cor" style="max-width: 500px; margin-top:60px ;">
+                            <h2>Burnout!</h2>
+                            <blockquote>Burnout is a state of emotional, physical, and mental exhaustion caused by
+                                excessive
+                                and
+                                prolonged stress. It occurs when you feel overwhelmed, emotionally drained, and unable
+                                to
+                                meet
+                                constant demands. As the stress continues, you begin to lose the interest and motivation
+                                that
+                                led you to take on a certain role in the first place.</blockquote>
+                            <div class="author">
+                                <h4>~Saadiah</h4>
+                            </div>
+                            <div class="author"><a
+                                    href="https://saadiyahh.medium.com/burnout-how-it-feels-like-384fef2d4d6c">Read at
+                                    Medium</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="item-container">
+                        <div>
+                            <img src="https://miro.medium.com/max/700/1*7Y4nKCZIDLNHWHcLhWfDRA.png" alt="image-2">
+                        </div>
+                        <div class="cor" style="max-width: 500px; margin-top:60px ;">
+                            <h2>Taking it to the Next Level</h2>
+                            <blockquote>Hey peeps, as promised in the previous blog, this week has been very fruitful in
+                                terms of Learning advanced JavaScript. This week we really did took it to the next
+                                level.
+                            </blockquote>
+                            <div class="author">
+                                <h4>~Saad Farooq</h4>
+                            </div>
+                            <div class="author"><a href="https://engr-saadfarooq.medium.com/">Read at
+                                    Medium</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div class="item">
-                <div class="item-container">
-                    <div>
-                        <img src="https://miro.medium.com/max/700/1*73atmf2FBPP2yHASzAWUaw.jpeg" alt="image-4">
-                    </div>
-                    <div class="content" style="max-width: 500px; margin-top:60px ;">
-                        <h2>Software Bug</h2>
-                        <blockquote>“Bug” literally means an insect. So what does an insect has to do with software? Is
-                            it like an insect getting into your computer/laptop and affecting your software? Or some
-                            virus getting into your system and affecting the software?
-                        </blockquote>
-                        <div class="author">
-                            <h4>~Muhammad Wahaj Mubeen</h4>
+                <div class="item">
+                    <div class="item-container">
+                        
+                        <div class="">
+                            <img src="https://miro.medium.com/max/700/1*73atmf2FBPP2yHASzAWUaw.jpeg" alt="image-4">
                         </div>
-                        <div class="author"><a href="https://iwahajmubeen341.medium.com/software-bug-823dd406fac2">Read at
-                                Medium</a></div>
+                        <div class="cor" style="max-width: 500px; margin-top:60px ;">
+                            <h2>Software Bug</h2>
+                            <blockquote>“Bug” literally means an insect. So what does an insect has to do with software?
+                                Is
+                                it like an insect getting into your computer/laptop and affecting your software? Or some
+                                virus getting into your system and affecting the software?
+                            </blockquote>
+                            <div class="author">
+                                <h4>~Muhammad Wahaj Mubeen</h4>
+                            </div>
+                            <div class="author"><a
+                                    href="https://iwahajmubeen341.medium.com/software-bug-823dd406fac2">Read at
+                                    Medium</a></div>
+                        </div>
                     </div>
                 </div>
+                </div>
+
+
             </div>
 
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+
+            <div class="container time">
+                <b><p class="primary" id="timer"></p></b>
+            </div>
 
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-
+  
 </body>
 
 </html>
