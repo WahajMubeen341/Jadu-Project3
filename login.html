@@ -1,94 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JADU Blogs</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-  </head>
-  <body>
-    <div class="sidenav">
-      <div class="login-main-text">
-        <h2>
-          Welcome to JADU<br />
-          BLOGS
-        </h2>
-        <p>
-          Here you get access to all the blogs of JADU fellowship program's
-          first batch.<br />
-          JADU is a Full-Stack Web Development program.
-          <a
-            href="https://docs.google.com/document/d/1P4mZqrziiRs6Cmp2Xy2j6nNYpYuSHIDvBUkNO5Mx8QY/edit"
-            style="color: black"
-            >Know more</a
-          >
-        </p>
-        <p>Login or register from here to get access.</p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JADU Blogs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+</head>
+<style>
+  html,
+  body {
+
+    font-family: 'Spartan', sans-serif;
+  }
+</style>
+
+<body>
+  <div class="sidenav">
+    <div class="login-main-text">
+      <h2>
+        Welcome to JADU<br />
+        BLOGS
+      </h2>
+      <p>
+        Here you get access to all the blogs of JADU fellowship program's
+        first batch.<br />
+        JADU is a Full-Stack Web Development program.
+        <a href="https://docs.google.com/document/d/1P4mZqrziiRs6Cmp2Xy2j6nNYpYuSHIDvBUkNO5Mx8QY/edit"
+          style="color: black">Know more</a>
+      </p>
+      <p>Login or register from here to get access.</p>
     </div>
+  </div>
 
-    <div class="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="myform">
-              <div class="logo mb-3">
-                <div class="col-md-12 text-center">
-                  <h1>Login</h1>
-                </div>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="myform">
+            <div class="logo mb-3">
+              <div class="col-md-12 text-center">
+                <h1>Login</h1>
               </div>
-
-              <form>
-                <div class="form-group">
-                  <label> Email address </label>
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    id="verify_email"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label> Password </label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="verify_password"
-                    class="form-control"
-                    placeholder="Enter Password"
-                  />
-                </div>
-                <div class="col-md-12 text-center">
-                  <button
-                    id="check_member"
-                    type="submit"
-                    class="btn btn-block mybtn tx-tfm"
-                    style="background-color: #0b8cd5; color: white"
-                  >
-                    Log In
-                  </button>
-                </div>
-                <div class="form-group">
-                  <p class="text-center">
-                    <br />
-                    <a href="#">Forgot password</a><br />
-                    Don't have an account?
-                    <a href="./signup.html" id="signup">Sign up here</a>
-                  </p>
-                </div>
-              </form>
             </div>
+
+            <form>
+              <div class="form-group">
+                <label> Email address </label>
+                <input type="email" name="email" class="form-control" id="verify_email" placeholder="Enter email" />
+              </div>
+              <div class="form-group">
+                <label> Password </label>
+                <input type="password" name="password" id="verify_password" class="form-control"
+                  placeholder="Enter Password" />
+              </div>
+              <div class="col-md-12 text-center">
+                <button id="check_member" type="submit" class="btn btn-block mybtn tx-tfm"
+                  style="background-color: #0b8cd5; color: white">
+                  Log In
+                </button>
+              </div>
+              <div class="form-group">
+                <p class="text-center">
+                  <br />
+                  <a href="#">Forgot password</a><br />
+                  Don't have an account?
+                  <a href="./index.html" id="signup">Sign up here</a>
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="signup.js"></script>
-  </body>
+  </div>
+  <script src="login.js"></script>
+</body>
+
 </html>
