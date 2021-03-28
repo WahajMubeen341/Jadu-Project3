@@ -1,6 +1,6 @@
 const verify_emailInput = document.getElementById("verify_email");
 const verify_passwordInput = document.getElementById("verify_password");
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 
 const checkUserBtn = document.getElementById("check_member");
@@ -14,15 +14,19 @@ checkUserBtn.addEventListener("click", function () {
     console.log(verify_emailInput.value);
     console.log(verify_passwordInput.value);
     JSONToUser.filter((user) => {
-      if (user.email === verify_emailInput.value) {
-        if (user.password === verify_passwordInput.value) {
+
+        if(user.email === "" || user.password===""){
+            alert("Provide Credentials!")
+        }
+      else if (user.email === verify_emailInput.value && user.password === verify_passwordInput.value ) {
+        
          //document.location.href="./landingPage.html";
          isUser=true;
          console.log("true")   
-        }
+        
       }
 
     });
-    isUser ? swal("Hello") : alert("not a user");
+    isUser ? alert("Valid user") : alert("not a user");
   });
  
