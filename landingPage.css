@@ -10,22 +10,34 @@ html, body {
 
 .nav-link {
     font-weight: bold;
-    padding-left: 20px !important;
-    color: black !important;
+    margin: 0px 8px !important;
+}
+
+.contact{
+    margin-right: 100px !important;
 }
 
 .nav-link:hover {
     background-color: #007bff !important;
     color: white !important;
+    padding: 8px 20px !important;
 }
 
 .jadu-logo {
     width: 100px !important;
     height: auto !important;
-    margin: auto !important;
     margin-top: -10px !important;
 }
 
+
+.fp {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
+/* 
 .search-form {
     margin-top: 10px;
     padding: 0px 150px;
@@ -35,12 +47,7 @@ html, body {
 .btn-outline-primary {
     background-color: white !important;
 }
-
-.fp {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-}
+ */
 
 /* End of Navbar and Footer */
 
@@ -62,14 +69,16 @@ img {
 .time {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 50px;
     font-size: 100px;
     text-shadow: 5px -1px 3px rgba(87, 150, 150, 0.94);
 }
 
 h2 {
+<<<<<<< Updated upstream:index.css
     text-shadow: 2px 2px 4px #000000;
+<<<<<<< Updated upstream:landingPage.css
 }
 h1{
     font-weight: 900;
@@ -78,3 +87,12 @@ h1{
     display:flex;
     justify-content:space-between;
 }
+=======
+=======
+    text-shadow: 2px 2px 4px #b99a10;
+}
+h1{
+    font-weight: 900;
+>>>>>>> Stashed changes:landingPage.css
+}
+>>>>>>> Stashed changes:index.css
