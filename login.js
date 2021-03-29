@@ -8,10 +8,9 @@ console.log(JSONToUser);
 
 var isUser = false;
 checkUserBtn.addEventListener("click", function () {
-  console.log("here");
-  console.log(verify_emailInput.value);
-  console.log(verify_passwordInput.value);
-
+  //console.log("here");
+  //console.log(verify_emailInput.value);
+  //console.log(verify_passwordInput.value);
   JSONToUser.filter((user) => {
     if (
       user.email === verify_emailInput.value &&
@@ -23,11 +22,10 @@ checkUserBtn.addEventListener("click", function () {
     }
   });
 
- if(isUser){
-   //window.location.href="landingPage.html"
-  alert("Valid")
- }
- else{
-   alert("Invalid User")
- }
+  if (isUser) {
+    //window.location.href="landingPage.html"
+    alert("Valid");
+  } else {
+    alert("Invalid User");
+  }
 });
