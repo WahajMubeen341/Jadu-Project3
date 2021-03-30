@@ -71,32 +71,32 @@
                             </div>
                         </div>
 
-                        <form id="form">
+                        <form>
 
                             <div class="form-group">
                                 <label class="form-label"> Email address </label>
                                 <input type="email" name="email" class="form-control" id="email"
-                                    placeholder="Enter your email" required />
+                                    placeholder="Enter your email" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label"> Subject</label>
                                 <input type="string" name="subject" id="subject" class="form-control"
-                                    placeholder="Enter the subject" required />
+                                    placeholder="Enter the subject" required>
                             </div>
                             <div class="form-group">
                                 <label>Message</label>
-                                <input class="form-control" type="text" id="message" style="height: 100px;"
-                                    placeholder="Type your message" required />
+                                <textarea class="form-control" id="message" rows="3" placeholder="Type your message"
+                                    required></textarea>
                             </div>
                             <div class="col-md-12 text-center">
                                 <button id="sendMail" type="submit" class="btn btn-block mybtn btn-primary tx-tfm"
                                     style="background-color: #0b8cd5; color: white">
-                                    Send
+                                    Send Email
                                 </button>
                             </div>
 
-                        </form>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -120,10 +120,6 @@
         const subject = document.getElementById("subject");
         const message = document.getElementById("message");
 
-        function init() {
-            document.getElementById("form").onsubmit = validateForm;
-        }
-
 
         function sendEmail(from, subject, message) {
             //console.log("email", from);
@@ -141,7 +137,7 @@
             })
                 .then(function (message) {
 
-                    alert("Message sent successfully. We'll get back to you soon!");
+                    alert("mail sent successfully");
 
 
                 })
@@ -150,15 +146,8 @@
 
         const sendMail = document.getElementById("sendMail")
         sendMail.addEventListener("click", function (e) {
-
-            //e.preventDefault();
-
-            email.value === "" || subject.value === "" || message.value === "" ?
-
-                function validateForm(form) {
-                    return(email, subject, message);
-                } :
-
+            e.preventDefault();
+            email.value === "" || subject.value === "" || message.value === "" ? alert("Fill all fields") :
                 sendEmail(email.value, subject.value, message.value);
             document.getElementById("email").value = "";
             document.getElementById("subject").value = "";
