@@ -2,6 +2,7 @@ const verify_emailInput = document.getElementById("verify_email");
 const verify_passwordInput = document.getElementById("verify_password");
 
 const checkUserBtn = document.getElementById("check_member");
+
 const userStorage = localStorage.getItem("users");
 const JSONToUser = JSON.parse(userStorage);
 console.log(JSONToUser);
@@ -14,6 +15,7 @@ checkUserBtn.addEventListener("click", function (e) {
   //console.log(verify_passwordInput.value);
 
   e.preventDefault();
+
   JSONToUser.filter((user) => {
     if (
       user.email === verify_emailInput.value &&
@@ -25,11 +27,17 @@ checkUserBtn.addEventListener("click", function (e) {
       console.log("true");
     }
   });
+  //if (user) {
+    //window.location.replace("./landingPage.html");
+  //} else {
+    //alert("PLease Enter valid credentials");
+ // }
+
   isUser
-    ? window.location.replace("./landingPage.html")
-    : //() => {
-        alert("PLease Enter valid credentials");
-        //document.getElementById("verify_email").value = "";
-        //document.getElementById("verify_password").value = "";        
-      //};
+  ? window.location.replace("./landingPage.html")
+  : //() => {
+      alert("PLease Enter valid credentials");
+      //document.getElementById("verify_email").value = "";
+      //document.getElementById("verify_password").value = "";        
+    //};
 });

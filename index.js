@@ -7,8 +7,8 @@ const addUserBtn = document.getElementById("add_user");
 
 //localStorage.clear();
 const userStorage = localStorage.getItem("users");
-const JSONToUser = JSON.parse(userStorage);
-let users = JSONToUser || [];
+const parsed = JSON.parse(userStorage);
+let users = parsed || [];
 
 console.log(users);
 
@@ -25,16 +25,16 @@ class User {
     this.password = password;
   }
 }
-addUserBtn.addEventListener("click", function () {
-  if(nameInput.value==="" || emailInput.value==="" || passwordInput.value===""){
+addUserBtn.addEventListener("click",  function ()  {
+  if(nameInput.value ==="" || emailInput.value ==="" || passwordInput.value===""){
     alert("Please fill the complete form!");
   }
   else{
   const user = new User(
-    Date.now(),
-    nameInput.value,
-    emailInput.value,
-    passwordInput.value
+    Date.now(), //id
+    nameInput.value, //name
+    emailInput.value, //email
+    passwordInput.value //password
   );
   users.push(user);
   const usersJson = JSON.stringify(users);
