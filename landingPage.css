@@ -13,7 +13,7 @@ html, body {
     margin: 0px 8px !important;
 }
 
-.contact{
+.last-navlink{
     font-weight: bold;
     margin-right: 100px !important;
 }
@@ -98,12 +98,13 @@ img {
 }
 
 h2 {
-
     text-shadow: 2px 2px 4px #000000;
-
 }
+
 h1{
     font-weight: 900;
+    text-shadow: 4px 2px 4px #f3efef;
+
 }
 .navItems{
     display:flex;
